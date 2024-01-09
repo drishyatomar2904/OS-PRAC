@@ -169,17 +169,15 @@ $
 
 2. `pwd`: Shows you which directory you are currently in.
 
-3. `mkdir`: Makes a new directory (folder).
+3. `mkdir directory_name`: Makes a new directory (folder).
 
-4. `cd rt`: Changes into the "rt" directory.
+4. `cd rt`: For going into the "rt" directory made just now.
 
-5. `touch yt.txt`: Creates a new empty file called "yt.txt."
+5. `touch yt.txt`: Creates a new file called "yt.txt."
 
 6. `ls`: Lists the files and folders in the current directory.
 
-7. `nano yt.txt`: Tries to open the "yt.txt" file for editing (but nano is not available in this case).
-
-8. `cd..`: Tries to move up one directory, but there should be a space between `cd` and `..`.
+7. `nano yt.txt`: open the "yt.txt" file for editing.
 
 9. `touch mt.txt`: Creates a new empty file called "mt.txt."
 
@@ -198,8 +196,6 @@ $
 16. `ls rt`: Tries to list the contents of the "rt" folder, but encounters an error because "rt" is not in the current directory.
 
 17. `ls`: Lists the files and folders in the current directory.
-
-18. `cat yt1.txt mt.txt`: Tries to show the contents of "yt1.txt" and "mt.txt," but there's an error because "yt1.txt" doesn't exist.
 
 19. `touch mt.txt`: Creates a new empty file named "mt.txt."
 
