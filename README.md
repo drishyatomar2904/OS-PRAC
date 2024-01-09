@@ -7,13 +7,9 @@ pwd
 
 /home/cg/root/659cdd0923335
 export "PS1=$ "
-$ mkdir
-mkdir
-mkdir: missing operand
-Try 'mkdir --help' for more information.
-export "PS1=$ "
 
 $ mkdir rt
+
 mkdir rt
 
 export "PS1=$ "
@@ -28,46 +24,48 @@ touch yt.txt
 export "PS1=$ "
 
 $ ls 
+
 ls 
 
 rt  yt.txt
 export "PS1=$ "
 
 $ nano yt
+
 nano yt
 
 bash: nano: command not found
 export "PS1=$ "
 
 $ nano yt.txt
+
 $ nano yt.txt
 bash: $: command not found
 export "PS1=$ "
 
 $ cd..
+
 cd..
 bash: cd..: command not found
 export "PS1=$ "
 
-$ cd ..
-$ cd ..
-cd ..
-
-export "PS1=$ "
 
 $ touch mt.txt
+
 touch mt.txt
 
 export "PS1=$ "
 export "PS1=$ "
 
 $ mv mt.txt rt
+
 mv mt.txt rt
 
 export "PS1=$ "
 export "PS1=$ "
 
 $ cp rt/yt.txt
+
 cp rt/yt.txt
 
 export "PS1=$ "
@@ -75,10 +73,12 @@ cp: missing destination file operand after 'rt/yt.txt'
 Try 'cp --help' for more information.
 export "PS1=$ "
 $ cd rt
+
 cd rt
 export "PS1=$ "
 
 $ ls
+
 ls
 
 export "PS1=$ "
@@ -86,6 +86,7 @@ rt  yt.txt
 export "PS1=$ "
 
 $ cp rt/yt.txt 659cdd0923335/yt1.txt
+
 export "PS1=$ "
 cp rt/yt.txt 659cdd0923335/yt1.txt
 
@@ -97,13 +98,16 @@ ls
 rt  yt.txtexport "PS1=$ "
 
 $ cp yt.txt rt/yt1.txt
+
 export "PS1=$ "
 cp yt.txt rt/yt1.txt
 
 export "PS1=$ "
 
 $ cd rt
+
 $ ls
+
 mt.txt  yt1.txt
 $ cd ..
 export "PS1=$ "
@@ -112,13 +116,16 @@ cd ..
 export "PS1=$ "
 
 $ ls rt
+
 ls: cannot access 'rt': No such file or directory$ 
 export "PS1=$ "
 export "PS1=$ "$ ls
 rt  yt.txt
 $ ls rt
+
 mt.txt  yt1.txt
 $ cat yt1.txt mt.txt
+
 cat yt1.txt mt.txt
 
 cat: yt1.txt: No such file or directory
@@ -126,11 +133,13 @@ cat: mt.txt: No such file or directory
 export "PS1=$ "
 
 $ ls
+
 ls
 rt  yt.txt
 export "PS1=$ "
 
 $ cat yt.txt mt.txt
+
 cat yt.txt mt.txt
 
 export "PS1=$ "
@@ -138,19 +147,22 @@ cat: mt.txt: No such file or directory
 export "PS1=$ "
 
 $ ls
+
 rt  yt.txt
 $ touch mt.txt
+
 touch mt.txt
 
 export "PS1=$ "
 
 $ cat yt.txt mt.txt
+
 cat yt.txt mt.txt
 
 export "PS1=$ "
 export "PS1=$ "
 $ 
-..............................................................................................................................................................................................................................................................................
+......................................................................................................................................................................................................................................................................................................
 #work of each command used here
 
 1. `export "PS1=$ "`: Sets the appearance of your command prompt.
