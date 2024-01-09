@@ -1,4 +1,4 @@
-# Linux
+# Linux1
 #linux commands execution in os prac 1
 export "PS1=$ "
 
