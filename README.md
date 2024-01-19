@@ -42,7 +42,7 @@ LINUX COMMANDS:
 
 21. `$ touch mt.txt`: Creates an empty file named "mt.txt" in the current directory.
 
-22. `$ cat yt.txt mt.txt`: Displays the contents of "yt.txt" and "mt.txt" files.
+22. `$ cat yt.txt mt.txt`: Merge and Displays the contents of "yt.txt" and "mt.txt" files.
 
 
 
