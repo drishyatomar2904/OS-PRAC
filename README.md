@@ -43,6 +43,8 @@ LINUX COMMANDS:
 21. `$ touch mt.txt`: Creates an empty file named "mt.txt" in the current directory.
 
 22. `$ cat yt.txt mt.txt`: Merge and Displays the contents of "yt.txt" and "mt.txt" files.
+23. '$ ./yt.sh :in order to run our file
+24. '$ chmod +x yt.sh' :To change the mode of the file from read and write to executable.
 
 
 
