@@ -1,0 +1,154 @@
+#Here we made directory and shell file and executed that shell file
+
+student@student-HP-280-Pro-G6-Microtower-PC:~$ pwd
+/home/student
+student@student-HP-280-Pro-G6-Microtower-PC:~$ mkdir rt
+student@student-HP-280-Pro-G6-Microtower-PC:~$ touch yt.sh
+student@student-HP-280-Pro-G6-Microtower-PC:~$ nano rt/yt.sh
+....................................................................................................................................................................................................................................................
+#Commands we have to write inside file after creating it:
+
+echo "Top 10 processes in descending order by CPU and memory usage are:"
+ps -eopid,ppid,cmd,%mem,%cpu --sort=-%mem,%cpu | head
+
+echo "Processes with highest memory usage are:"
+ps aux --sort=-%mem | head
+
+echo "Current logged-in user and login name are:"
+logname
+
+echo "Current shell is:"
+echo $SHELL
+echo "Home directory is:"
+echo $HOME
+echo "Current path is:"
+echo $PATH
+echo "Current working directory is:"
+pwd
+echo "Current OS version, release number, and kernel version are:"
+uname -a
+...................................................................................................................................................................................................................................................
+#Execution of this file
+
+student@student-HP-280-Pro-G6-Microtower-PC:~$ cd rt
+student@student-HP-280-Pro-G6-Microtower-PC:~/rt$ ./yt
+bash: ./yt: No such file or directory
+student@student-HP-280-Pro-G6-Microtower-PC:~/rt$ ./yt.sh
+bash: ./yt.sh: Permission denied
+student@student-HP-280-Pro-G6-Microtower-PC:~/rt$ chmod yt.sh
+chmod: missing operand after ‘yt.sh’
+Try 'chmod --help' for more information.
+student@student-HP-280-Pro-G6-Microtower-PC:~/rt$ chmod + x yt.sh
+chmod: cannot access 'x': No such file or directory
+student@student-HP-280-Pro-G6-Microtower-PC:~/rt$ chmod +x yt.sh
+student@student-HP-280-Pro-G6-Microtower-PC:~/rt$ ./yt.sh
+Top 10 processes in descending order areas are:
+./yt.sh: line 2: ps-eopid,ppid,cmd,%mem,%cpu--sort=-%: command not found
+Processes with highest memeory usage are:
+./yt.sh: line 5: sort-nk+4: command not found
+Current logged in users abd logname are:
+student
+current shell is :
+/bin/bash
+home directory is
+./yt.sh: line 13: /home/student: Is a directory
+Current path is
+/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin
+current working directory is
+/home/student/rt
+current os version , release number,kernal version are:
+Linux student-HP-280-Pro-G6-Microtower-PC 6.5.0-14-generic #14~22.04.1-Ubuntu SMP PREEMPT_DYNAMIC Mon Nov 20 18:15:30 UTC 2 x86_64 x86_64 x86_64 GNU/Linux
+student@student-HP-280-Pro-G6-Microtower-PC:~/rt$ nano yt.sh
+student@student-HP-280-Pro-G6-Microtower-PC:~/rt$ nano yt.sh
+student@student-HP-280-Pro-G6-Microtower-PC:~/rt$ ./yt.sh
+Top 10 processes in descending order areas are:
+error: improper AIX field descriptor
+
+Usage:
+ ps [options]
+
+ Try 'ps --help <simple|list|output|threads|misc|all>'
+  or 'ps --help <s|l|o|t|m|a>'
+ for additional help text.
+
+For more details see ps(1).
+Processes with highest memeory usage are:
+student     2002  0.0  0.1 745960 28288 ?        Ssl  11:19   0:00 /usr/libexec/evolution-addressbook-factory
+student     2055  0.0  0.1 662944 28800 ?        Ssl  11:19   0:00 /usr/libexec/xdg-desktop-portal-gnome
+student     2143  0.0  0.1 308532 21964 ?        Sl   11:19   0:00 /snap/snapd-desktop-integration/83/usr/bin/snapd-desktop-integration
+student     2147  0.0  0.1 343884 24196 ?        Ssl  11:19   0:00 /usr/libexec/xdg-desktop-portal-gtk
+student     2273  0.0  0.1 493472 28672 ?        Sl   11:20   0:00 update-notifier
+student     1732  0.0  0.2 578332 40320 ?        Sl   11:19   0:00 /usr/libexec/goa-daemon
+student     1863  0.0  0.3 818852 63360 ?        Sl   11:19   0:00 /usr/libexec/evolution-data-server/evolution-alarm-notify
+student     2012  0.0  0.3 3196208 63980 ?       Sl   11:19   0:00 gjs /usr/share/gnome-shell/extensions/ding@rastersoft.com/ding.js -E -P /usr/share/gnome-shell/extensions/ding@rastersoft.com -M 0 -D 0:0:1920:1080:1:27:0:74:0:0
+student     2235  0.4  0.3 560988 57612 ?        Ssl  11:20   0:09 /usr/libexec/gnome-terminal-server
+student     1636  1.5  1.5 5591824 250176 ?      Ssl  11:19   0:32 /usr/bin/gnome-shell
+Current logged in users abd logname are:
+student
+current shell is :
+/bin/bash
+home directory is
+./yt.sh: line 13: /home/student: Is a directory
+Current path is
+/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin
+current working directory is
+/home/student/rt
+current os version , release number,kernal version are:
+Linux student-HP-280-Pro-G6-Microtower-PC 6.5.0-14-generic #14~22.04.1-Ubuntu SMP PREEMPT_DYNAMIC Mon Nov 20 18:15:30 UTC 2 x86_64 x86_64 x86_64 GNU/Linux
+student@student-HP-280-Pro-G6-Microtower-PC:~/rt$ man ps
+student@student-HP-280-Pro-G6-Microtower-PC:~/rt$ nano yt.sh
+student@student-HP-280-Pro-G6-Microtower-PC:~/rt$ ps --help
+
+Usage:
+ ps [options]
+
+ Try 'ps --help <simple|list|output|threads|misc|all>'
+  or 'ps --help <s|l|o|t|m|a>'
+ for additional help text.
+
+For more details see ps(1).
+student@student-HP-280-Pro-G6-Microtower-PC:~/rt$ nano yt.sh
+student@student-HP-280-Pro-G6-Microtower-PC:~/rt$ ./yt.sh 
+Top 10 processes in descending order by CPU and memory usage are:
+    PID    PPID CMD                         %MEM %CPU
+   2760    1636 /snap/firefox/1635/usr/lib/  2.1 14.0
+   1636    1452 /usr/bin/gnome-shell         1.5  2.3
+   4014    2760 /snap/firefox/1635/usr/lib/  1.1  5.6
+   3026    2760 /snap/firefox/1635/usr/lib/  0.6  0.9
+   3215    2760 /snap/firefox/1635/usr/lib/  0.5  0.1
+   2858    1636 /usr/bin/Xwayland :0 -rootl  0.4  1.5
+   2883    1452 /usr/libexec/gsd-xsettings   0.4  0.0
+   2012    1636 gjs /usr/share/gnome-shell/  0.4  0.0
+   1863    1614 /usr/libexec/evolution-data  0.3  0.0
+Processes with highest memory usage are:
+USER         PID %CPU %MEM    VSZ   RSS TTY      STAT START   TIME COMMAND
+student     2760 14.0  2.1 11937504 349276 ?     Sl   12:05   0:32 /snap/firefox/1635/usr/lib/firefox/firefox
+student     1636  2.3  1.5 5854212 249136 ?      Ssl  11:19   1:11 /usr/bin/gnome-shell
+student     4014  5.6  1.1 2603692 192516 ?      Sl   12:07   0:08 /snap/firefox/1635/usr/lib/firefox/firefox -contentproc -childID 8 -isForBrowser -prefsLen 30721 -prefMapSize 223348 -jsInitLen 267752 -parentBuildID 20220730053005 -appDir /snap/firefox/1635/usr/lib/firefox/browser 2760 true tab
+student     3026  0.9  0.6 2458916 111596 ?      Sl   12:06   0:02 /snap/firefox/1635/usr/lib/firefox/firefox -contentproc -childID 1 -isForBrowser -prefsLen 25130 -prefMapSize 223348 -jsInitLen 267752 -parentBuildID 20220730053005 -appDir /snap/firefox/1635/usr/lib/firefox/browser 2760 true tab
+student     3215  0.1  0.5 2448644 87764 ?       Sl   12:06   0:00 /snap/firefox/1635/usr/lib/firefox/firefox -contentproc -childID 2 -isForBrowser -prefsLen 29782 -prefMapSize 223348 -jsInitLen 267752 -parentBuildID 20220730053005 -appDir /snap/firefox/1635/usr/lib/firefox/browser 2760 true tab
+student     2858  1.5  0.4 1024444 75660 ?       Sl   12:06   0:03 /usr/bin/Xwayland :0 -rootless -noreset -accessx -core -auth /run/user/1000/.mutter-Xwaylandauth.0EEWH2 -listen 4 -listen 5 -displayfd 6 -initfd 7
+student     2883  0.0  0.4 1245936 68928 ?       Ssl  12:06   0:00 /usr/libexec/gsd-xsettings
+student     2012  0.0  0.4 3196760 65132 ?       Sl   11:19   0:01 gjs /usr/share/gnome-shell/extensions/ding@rastersoft.com/ding.js -E -P /usr/share/gnome-shell/extensions/ding@rastersoft.com -M 0 -D 0:0:1920:1080:1:27:0:74:0:0
+student     1863  0.0  0.3 818888 63360 ?        Sl   11:19   0:00 /usr/libexec/evolution-data-server/evolution-alarm-notify
+Current logged-in user and login name are:
+student
+Current shell is:
+/bin/bash
+Home directory is:
+/home/student
+Current path is:
+/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin
+Current working directory is:
+/home/student/rt
+Current OS version, release number, and kernel version are:
+Linux student-HP-280-Pro-G6-Microtower-PC 6.5.0-14-generic #14~22.04.1-Ubuntu SMP PREEMPT_DYNAMIC Mon Nov 20 18:15:30 UTC 2 x86_64 x86_64 x86_64 GNU/Linux
+student@student-HP-280-Pro-G6-Microtower-PC:~/rt$ nano yt.sh
+student@student-HP-280-Pro-G6-Microtower-PC:~/rt$ 
+
+
+
+
+
+
+
