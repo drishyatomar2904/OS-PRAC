@@ -1,0 +1,113 @@
+Terminal
+.........
+
+
+[student@cad14 dt]$ mkdir rt 
+
+[student@cad14 dt]$ cd rt
+
+[student@cad14 rt]$ touch dt.c [student@cad14 rt]$ touch at.c
+
+[student@cad14 rt]$ ls
+
+at.c dt.c
+
+[student@cad14 rt]$ nano rt / dt .c [student@cad14 rt]$ nano rt / at .c
+[student@cad14 rt]$ gcc dt.c-o out
+
+[student@cad14 rt]$ ./out
+
+Hello world!
+
+Hello world!
+
+[student@cad14 rt]$ gcc at.c-o out
+
+[student@cad14 rt]$ ./out
+
+Before fork: Process id is 9871
+
+This is child process
+
+Process id is 9872 and PPID is 9871
+
+This is parent process Process id is 9871 and PPID is 4153
+
+Newly created process id or child pid is 9872
+
+
+nano files
+..........
+
+
+dt.c
+****
+
+#include <stdio.h>
+
+#include <sys/types.h>
+
+#include <unistd.h>
+
+int main()
+
+{
+
+// make two process which run same // program after this instruction fork():
+
+printf("Hello world!\n"): return 0;
+}
+  
+
+at.c
+*****
+
+#include<stdio.h>
+
+#include<sys/types.h>
+
+#include<unistd.h>
+
+int main() {
+
+int pid tpid.mypid.myppid;
+
+int pid getpid();
+
+printf("Before fork: Process id is %d\n",pid);
+
+pid-fork();
+
+if(pid < 0) \
+
+perror("fork() failure\n");
+
+return 1;
+
+}
+
+// Child process
+
+if(pid + 0) \
+
+printf("This is child process\n");
+
+mypid-getpid();
+
+myppid=getppid();
+
+printf("Process id is %d and PPID is %d\n",mypid.myppid); }else{// Parent process
+
+sleep(2);
+
+printf("This is parent process\n");
+
+Onypid=getpid();
+
+myppid getppid();
+
+printf("Process id is %d and PPID is %d\n",mypid.myppid);
+
+printf("Newly created process id or child pid is %d\n",pid); }
+
+return);}
